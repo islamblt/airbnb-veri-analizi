@@ -55,6 +55,14 @@ Verilerin temizlenmesi ve analiz için hazırlanması amacıyla dbt kullanılmı
 - Ortalama müsaitlik günlerini hesaplar.
 - Toplam yorum sayılarını gösterir.
 
+**mart_dashboard_listings**
+
+- Her Airbnb ilanını ayrı bir satırda tutar.
+- İlanların mahalle ve oda türü bilgilerini içerir.
+- Gecelik fiyat ve minimum konaklama süresini gösterir.
+- Yorum sayısı ve müsaitlik bilgilerini içerir.
+- Power BI dashboard üzerinde KPI, grafik ve filtre oluşturulmasını destekler.
+
 ## 5. Veri Testleri
 
 dbt kullanılarak aşağıdaki testler oluşturulmuş ve başarıyla çalıştırılmıştır:
