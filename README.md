@@ -65,14 +65,22 @@ Verilerin temizlenmesi ve analiz için hazırlanması amacıyla dbt kullanılmı
 
 ## 5. Veri Testleri
 
-dbt kullanılarak aşağıdaki testler oluşturulmuş ve başarıyla çalıştırılmıştır:
+Verilerin doğruluğunu ve tutarlılığını kontrol etmek amacıyla dbt testleri oluşturulmuş ve başarıyla çalıştırılmıştır.
+
+Uygulanan testler:
 
 - İlan numaralarının benzersiz olması (`unique`).
 - İlan numaralarının boş olmaması (`not_null`).
 - Mahalle bilgilerinin boş olmaması (`not_null`).
 - Fiyat bilgilerinin boş olmaması (`not_null`).
+- Enlem bilgilerinin boş olmaması (`not_null`).
+- Boylam bilgilerinin boş olmaması (`not_null`).
+- Oda türlerinin boş olmaması (`not_null`).
+- Oda türlerinin belirlenen değerlerden oluşması (`accepted_values`).
+- Minimum konaklama süresinin boş olmaması (`not_null`).
+- Enlem ve boylam değerlerinin geçerli koordinat aralıklarında olması.
 
-**Test sonucu:** 4 başarılı test.
+**Test sonucu:** 10 başarılı test, 0 hata.
 
 ## 6. dbt Dokümantasyonu
 
