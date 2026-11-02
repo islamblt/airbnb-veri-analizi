@@ -14,6 +14,8 @@ Projenin amacı, Airbnb ilan fiyatlarının mahallelere ve oda türlerine göre 
 - dbt-duckdb
 - Git
 - GitHub
+- Power BI Desktop
+- HTML / CSV (veri aktarımı için)
 
 ## 3. Veri Seti
 
@@ -107,3 +109,30 @@ Sonuç:
 - GitHub üzerinde özel bir proje deposu oluşturulmuştur.
 - Proje dosyaları ve CSV veri seti depoya yüklenmiştir.
 - Dört takım arkadaşına depo erişimi verilmiştir.
+- Power BI dashboard dosyası ve dashboard için hazırlanan CSV dosyaları depoya yüklenmiştir.
+
+## 9. Power BI Dashboard
+
+Proje kapsamında, dbt ile hazırlanan mart modelleri kullanılarak Power BI Desktop üzerinde etkileşimli bir dashboard oluşturulmuştur.
+
+### Dashboard İçeriği
+
+- Toplam Airbnb ilan sayısı KPI göstergesi.
+- Ortalama gecelik fiyat KPI göstergesi.
+- Ortalama minimum konaklama süresi KPI göstergesi.
+- Mahalle gruplarına göre filtreleme (neighbourhood_group).
+- Oda türlerine göre filtreleme (room_type).
+
+### Kullanılan Veri Dosyaları
+
+Power BI raporunda kullanılmak üzere dbt mart modellerinden CSV dosyaları oluşturulmuştur.
+
+- `mart_dashboard_listings.csv`
+- `mart_neighborhood_prices.csv`
+- `mart_room_type_analysis.csv`
+
+### Dashboard Dosyası
+
+- `Airbnb_Veri_Analizi.pbix`
+
+Power BI raporu ve ilgili üç CSV dosyası GitHub deposuna yüklenmiştir.
