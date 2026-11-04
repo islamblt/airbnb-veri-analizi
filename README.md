@@ -123,6 +123,20 @@ Proje kapsamında, dbt ile hazırlanan mart modelleri kullanılarak Power BI Des
 - Mahalle gruplarına göre filtreleme (neighbourhood_group).
 - Oda türlerine göre filtreleme (room_type).
 
+### Dashboard Grafikleri
+
+1. Mahallelere Göre Ortalama Airbnb Fiyatları
+
+New York mahallelerindeki Airbnb ilanlarının ortalama gecelik fiyatlarını karşılaştırır. Grafik, mahalleler arasındaki fiyat farklılıklarının incelenmesini sağlar.
+
+2. Oda Türlerine Göre Ortalama Airbnb Fiyatları
+
+Entire home/apt, Private room ve Shared room kategorilerindeki ortalama gecelik fiyatları karşılaştırır.
+
+3. Bölgelere Göre Airbnb İlan Dağılımı
+
+Bronx, Brooklyn, Manhattan, Queens ve Staten Island bölgelerindeki Airbnb ilanlarının dağılımını gösterir.
+
 ### Kullanılan Veri Dosyaları
 
 Power BI raporunda kullanılmak üzere dbt mart modellerinden CSV dosyaları oluşturulmuştur.
