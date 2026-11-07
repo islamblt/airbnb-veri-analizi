@@ -1,0 +1,58 @@
+
+version: 2
+
+models:
+  - name: stg_airbnb_listings
+    description: "Temizlenmiş Airbnb ilan verileri"
+
+    columns:
+      - name: listing_id
+        description: "Her ilanın benzersiz numarası"
+        data_tests:
+          - unique
+          - not_null
+
+      - name: neighbourhood
+        description: "İlanın bulunduğu mahalle"
+        data_tests:
+          - not_null
+
+      - name: price
+        description: "Gecelik ilan fiyatı"
+        data_tests:
+          - not_null
+
+      - name: latitude
+        description: "İlanın enlem bilgisi"
+        data_tests:
+          - not_null
+
+      - name: longitude
+        description: "İlanın boylam bilgisi"
+        data_tests:
+          - not_null
+
+      - name: room_type
+        description: "İlanın oda türü"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - "Entire home/apt"
+                  - "Private room"
+                  - "Shared room"
+
+      - name: minimum_nights
+        description: "Minimum konaklama süresi"
+        data_tests:
+          - not_null
+
+  - name: mart_neighborhood_prices
+    description: "Mahallelere göre Airbnb ilan fiyatlarını ve ilan sayılarını özetleyen model"
+
+  - name: mart_room_type_analysis
+    description: "Oda türlerine göre ilan sayılarını, fiyatları, minimum konaklama sürelerini, müsaitlik günlerini ve yorum sayılarını özetleyen model"
+
+  - name: mart_dashboard_listings
+    description: "Power BI dashboard için ilan bazlı ayrıntılı veriler"
