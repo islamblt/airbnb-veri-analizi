@@ -65,6 +65,27 @@ Verilerin temizlenmesi ve analiz için hazırlanması amacıyla dbt kullanılmı
 - Yorum sayısı ve müsaitlik bilgilerini içerir.
 - Power BI dashboard üzerinde KPI, grafik ve filtre oluşturulmasını destekler.
 
+**mart_host_analysis**
+
+- Ev sahiplerine göre toplam ilan sayılarını hesaplar.
+- Ev sahiplerinin ilanlarının ortalama, minimum ve maksimum fiyatlarını gösterir.
+- Ev sahiplerinin toplam yorum sayılarını hesaplar.
+- Ortalama müsaitlik günlerini analiz eder.
+
+**mart_availability_analysis**
+
+- Bölge ve oda türüne göre ilan sayılarını hesaplar.
+- Ortalama müsait günleri gösterir.
+- Minimum ve maksimum müsaitlik günlerini karşılaştırır.
+- Yıllık müsaitlik oranını hesaplar.
+
+**mart_neighborhood_room_type_analysis**
+
+- Mahalle ve oda türüne göre ilan sayılarını hesaplar.
+- Ortalama ve medyan fiyatları karşılaştırır.
+- Ortalama minimum konaklama süresini gösterir.
+- Toplam yorum sayılarını ve ortalama müsaitlik günlerini analiz eder.
+
 ## 5. Veri Testleri
 
 Verilerin doğruluğunu ve tutarlılığını kontrol etmek amacıyla dbt testleri oluşturulmuş ve başarıyla çalıştırılmıştır.
@@ -98,11 +119,17 @@ Sonuç:
 
 | Durum | Sayı |
 |---|---:|
-| PASS | 7 |
+| PASS | 17 |
 | WARN | 0 |
 | ERROR | 0 |
 | SKIP | 0 |
-| TOTAL | 7 |
+| TOTAL | 17 |
+
+**Güncel Model Sayısı:** 7
+- 1 Staging modeli
+- 6 Mart modeli
+
+**Veri Testleri:** 10 başarılı, 0 hata.
 
 ## 8. GitHub
 
@@ -144,6 +171,9 @@ Power BI raporunda kullanılmak üzere dbt mart modellerinden CSV dosyaları olu
 - `mart_dashboard_listings.csv`
 - `mart_neighborhood_prices.csv`
 - `mart_room_type_analysis.csv`
+- `mart_host_analysis.csv`
+- `mart_availability_analysis.csv`
+- `mart_neighborhood_room_type_analysis.csv`
 
 ### Dashboard Dosyası
 
