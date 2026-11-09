@@ -27,6 +27,40 @@ Projede Kaggle üzerinden alınan New York City Airbnb Open Data veri seti kulla
 - **Sütun sayısı:** 16
 - **Veri yılı:** 2019
 
+### Veri İnceleme ve Temizleme Çalışması
+
+Projeye Python, Pandas ve NumPy kullanılarak hazırlanan `airbnb_veri_temizleme.ipynb` dosyası eklenmiştir.
+
+Bu çalışmada:
+
+- Veri setinin genel yapısı ve sütunları incelenmiştir.
+- Eksik verilerin sayısı ve oranı kontrol edilmiştir.
+- Yinelenen kayıtlar araştırılmıştır.
+- Sıfır, negatif ve olağan dışı fiyat değerleri incelenmiştir.
+- Minimum konaklama süreleri değerlendirilmiştir.
+- Enlem ve boylam bilgilerinin geçerliliği kontrol edilmiştir.
+- Oda türleri ve bölge bilgileri incelenmiştir.
+- Yorum sayıları, yorum tarihleri ve müsaitlik bilgileri değerlendirilmiştir.
+- Eksik ilan ve ev sahibi bilgileri kontrol edilmiştir.
+- Tespit edilen veri kalitesi sorunlarına yönelik temizleme kararları değerlendirilmiştir.
+
+**Veri incelemesi sonucunda elde edilen bulgular:**
+
+| Kontrol | Sonuç |
+|---|---:|
+| Toplam kayıt | 48.895 |
+| Toplam sütun | 16 |
+| Eksik ilan adı | 16 |
+| Eksik ev sahibi adı | 21 |
+| Eksik son yorum tarihi | 10.052 |
+| Eksik aylık yorum sayısı | 10.052 |
+| Yinelenen kayıt | 0 |
+| Sıfır fiyatlı ilan | 11 |
+| 365 günden fazla minimum gece | 14 |
+| Geçersiz koordinat | 0 |
+
+İnceleme sonucunda eksik ve olağan dışı değerler değerlendirilmiş, kesin hata olduğu doğrulanamayan kayıtların gereksiz yere silinmemesine karar verilmiştir.
+
 ## 4. Veri İşleme ve Dönüştürme
 
 Verilerin temizlenmesi ve analiz için hazırlanması amacıyla dbt kullanılmıştır.
