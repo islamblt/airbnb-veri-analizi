@@ -176,11 +176,13 @@ Sonuç:
 
 Proje kapsamında, dbt ile hazırlanan mart modelleri kullanılarak Power BI Desktop üzerinde etkileşimli bir dashboard oluşturulmuştur.
 
-### Dashboard İçeriği
-
+Dashboard İçeriği
 - Toplam Airbnb ilan sayısı KPI göstergesi.
 - Ortalama gecelik fiyat KPI göstergesi.
 - Ortalama minimum konaklama süresi KPI göstergesi.
+- Bölgeye göre en yüksek fiyat KPI göstergesi.
+- Oda türüne göre ortalama fiyat KPI göstergesi.
+- Oda türüne göre ilan sayısı KPI göstergesi.
 - Mahalle gruplarına göre filtreleme (neighbourhood_group).
 - Oda türlerine göre filtreleme (room_type).
 
