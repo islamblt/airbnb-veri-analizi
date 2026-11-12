@@ -27,8 +27,9 @@ Projede Kaggle üzerinden alınan New York City Airbnb Open Data veri seti kulla
 - **Sütun sayısı:** 16
 - **Veri yılı:** 2019
 
-Proje Yapısı
+## Proje Yapısı
 
+```text
 airbnb_dbt/
 │
 ├── data/
@@ -64,6 +65,7 @@ airbnb_dbt/
 ├── dbt_project.yml
 ├── README.md
 └── .gitignore
+```
 
 ### Veri İnceleme ve Temizleme Çalışması
 
