@@ -27,6 +27,44 @@ Projede Kaggle üzerinden alınan New York City Airbnb Open Data veri seti kulla
 - **Sütun sayısı:** 16
 - **Veri yılı:** 2019
 
+Proje Yapısı
+
+airbnb_dbt/
+│
+├── data/
+│   └── AB_NYC_2019.csv
+│
+├── models/
+│   ├── staging/
+│   │   ├── stg_airbnb_listings.sql
+│   │   └── schema.yml
+│   │
+│   └── marts/
+│       ├── mart_availability_analysis.sql
+│       ├── mart_dashboard_listings.sql
+│       ├── mart_host_analysis.sql
+│       ├── mart_neighborhood_prices.sql
+│       ├── mart_neighborhood_room_type_analysis.sql
+│       └── mart_room_type_analysis.sql
+│
+├── tests/
+│   ├── valid_airbnb_coordinates.sql
+│   └── .gitkeep
+│
+├── powerbi_data/
+│   ├── mart_availability_analysis.csv
+│   ├── mart_dashboard_listings.csv
+│   ├── mart_host_analysis.csv
+│   ├── mart_neighborhood_prices.csv
+│   ├── mart_neighborhood_room_type_analysis.csv
+│   └── mart_room_type_analysis.csv
+│
+├── airbnb_veri_temizleme.ipynb
+├── Airbnb_Veri_Analizi.pbix
+├── dbt_project.yml
+├── README.md
+└── .gitignore
+
 ### Veri İnceleme ve Temizleme Çalışması
 
 Projeye Python, Pandas ve NumPy kullanılarak hazırlanan `airbnb_veri_temizleme.ipynb` dosyası eklenmiştir.
@@ -215,4 +253,4 @@ Power BI raporunda kullanılmak üzere dbt mart modellerinden CSV dosyaları olu
 
 - `Airbnb_Veri_Analizi.pbix`
 
-Power BI raporu ve ilgili üç CSV dosyası GitHub deposuna yüklenmiştir.
+Power BI raporu ve ilgili altı CSV dosyası GitHub deposuna yüklenmiştir.
